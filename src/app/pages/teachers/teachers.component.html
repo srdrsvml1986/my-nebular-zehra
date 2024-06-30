@@ -1,0 +1,93 @@
+<nb-card class="list-card" size="medium">
+  <nb-card-header>Öğretmenler</nb-card-header>
+  <nb-list>
+    <nb-list-item *ngFor="let t of teachers" ngClass="contact">
+      <nb-user [name]="t.name" [title]="t.description" [picture]="t.photoURL">
+      </nb-user>
+      <div ngClass="user-action-icon">
+        <i class="fa-solid fa-pen-to-square" (click)="showUserDialog(edit,t,false)" title="Düzenle"></i>
+        <i class="fa-solid fa-trash" (click)="showUserDialog(deleteUserDialogTemplate,t,false)" title="Sil"></i>
+      </div>
+
+    </nb-list-item>
+  </nb-list>
+</nb-card>
+<ng-template #edit let-data let-ref="dialogRef">
+  <nb-card>
+    <nb-card-header>Düzenle</nb-card-header>
+    <nb-card-body>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="form-group">
+            <label for="name" class="label">adı</label>
+            <input type="name" nbInput [(ngModel)]="teacher.name" fullWidth id="name" placeholder="Adı">
+          </div>
+          <div class="form-group">
+            <label for="description" class="label">Açıklama</label>
+            <input type="description" nbInput [(ngModel)]="teacher.description" fullWidth id="description"
+              placeholder="Açıklama">
+          </div>
+          <div class="form-group">
+            <label for="photoURL" class="label">Fotoğraf URL</label>
+            <input type="photoURL" nbInput [(ngModel)]="teacher.photoURL" fullWidth id="photoURL"
+              placeholder="Fotoğraf URL giriniz">
+          </div>
+        </div>
+      </div><br>
+      <div style="padding: 3px;">
+        <button type="submit" (click)="updateTeacher(ref)" nbButton style="margin-right: 3px;">Gönder</button>
+        <button type="button" (click)="ref.close()" nbButton style="margin-left: 5px;">Kapat</button>
+      </div>
+    </nb-card-body>
+  </nb-card>
+</ng-template>
+<ng-template #add let-data let-ref="dialogRef">
+  <nb-card>
+    <nb-card-header>Ekle</nb-card-header>
+    <nb-card-body>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="form-group">
+            <label for="name" class="label">isim</label>
+            <input type="name" nbInput [(ngModel)]="teacher.name" fullWidth id="name" placeholder="İsim giriniz">
+          </div>
+          <div class="form-group">
+            <label for="description" class="label">Açıklama</label>
+            <input type="description" nbInput [(ngModel)]="teacher.description" fullWidth id="description"
+              placeholder="Açıklama giriniz">
+          </div>
+          <div class="form-group">
+            <label for="photoURL" class="label">Fotoğrag URL</label>
+            <input type="photoURL" nbInput [(ngModel)]="teacher.photoURL" fullWidth id="photoURL"
+              placeholder="Fotoğrag URL giriniz">
+          </div>
+        </div>
+      </div><br>
+      <div style="padding: 3px;">
+        <button type="submit" (click)="addTeacher(ref)" nbButton style="margin-right: 3px;">Gönder</button>
+        <button type="button" (click)="ref.close()" nbButton style="margin-left: 5px;">Kapat</button>
+      </div>
+    </nb-card-body>
+  </nb-card>
+</ng-template>
+<ng-template #deleteUserDialogTemplate let-data let-ref="dialogRef">
+  <nb-card>
+    <nb-card-header>Öğretmen sil</nb-card-header>
+    <nb-card-body>
+      <div class="row">
+        <div class="col-sm-12">
+          <nb-alert outline="danger" role="alert">
+            Girişi silmek istediğiniden emin misiniz?
+          </nb-alert>
+        </div>
+      </div><br>
+      <div style="padding: 3px;">
+        <button type="submit" (click)="deleteTeacher(ref)" nbButton style="margin-right: 3px;">Submit</button>
+        <button type="button" (click)="ref.close()" nbButton style="margin-left: 5px;">Close</button>
+      </div>
+    </nb-card-body>
+  </nb-card>
+</ng-template>
+
+
+<button type="submit" (click)="showUserDialog(add,teacher,true)" nbButton style="margin-right: 3px;">Öğretmen Ekle</button>

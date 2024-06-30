@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../src/app/pages/projects/test-table/test-table.component.scss"
+    ],
+    "names": [],
+    "file": "test-table.component.css"
+}

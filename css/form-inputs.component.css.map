@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACX,QAAQ,EAAE,OAAO;EACjB,WAAW,EAAE,CAAC;CAKf;;AAPD,AAIE,YAJU,GAIR,CAAC,CAAC;EACF,UAAU,EAAE,IAAI;CACjB;;AAGH,AAAA,iBAAiB;AACjB,sBAAsB,CAAC;EACrB,OAAO,EAAE,IAAI;EACb,MAAM,EAAE,SAAS;CAKlB;;AARD,AAKE,iBALe,GAKb,CAAC;AAJL,sBAAsB,GAIlB,CAAC,CAAC;EACF,MAAM,EAAE,QAAQ;CACjB;;AAGH,AAAA,eAAe,CAAC;EACd,OAAO,EAAE,IAAI;CACd;;AAED,AAAA,WAAW,CAAC;EACV,IAAI,EAAE,OAAO;CACd",
+    "sources": [
+        "../src/app/pages/forms/form-inputs/form-inputs.component.scss"
+    ],
+    "names": [],
+    "file": "form-inputs.component.css"
+}

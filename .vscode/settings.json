@@ -1,0 +1,14 @@
+{
+    "workbench.colorCustomizations": {
+        "editor.selectionBackground": "#ff0000",
+        "editor.selectionHighlightBackground": "#641f13",
+        "editor.selectionForeground":"#0ac500",
+    },
+    "editor.fontSize": 16,
+    "editor.suggestFontSize": 14,
+    "window.zoomLevel": 2.3,
+    "CodeGPT.apiKey": "OpenAI",
+    "CodeGPT.query.language": "Turkish",
+    "CodeGPT.Autocomplete.enabled": true,
+
+}

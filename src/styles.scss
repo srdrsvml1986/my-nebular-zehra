@@ -1,0 +1,43 @@
+//@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
+@use 'themes' as *;
+
+
+
+// framework component themes (styles tied to theme variables)
+@use '@nebular/theme/styles/globals' as *;
+@use '@nebular/auth/styles/globals' as *;
+
+// @use 'bootstrap/scss/functions' as *; 
+// @use 'bootstrap/scss/variables' as *; 
+// @use 'bootstrap/scss/mixins' as *; 
+// @use 'bootstrap/scss/grid' as *; 
+///@use '' as *; 
+
+// @import '';
+// @import '';
+// @import '';
+//@import '';
+
+// // loading progress bar theme
+// @import './pace.theme';
+
+// @import './layout';
+// @import './overrides';
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
+@include nb-install() {
+  //@include nb-theme-global();
+    // framework global styles
+    @include nb-theme-global();
+    @include nb-auth-global();
+  
+    // @include ngx-layout();
+    // // loading progress bar
+    // @include ngx-pace-theme();
+  
+    // @include nb-overrides();
+};
+/* You can add global styles to this file, and also import other style files */

@@ -1,0 +1,26 @@
+@use 'themes' as *;
+
+// framework component themes (styles tied to theme variables)
+@use '@nebular/theme/styles/globals' as *;
+@use '@nebular/auth/styles/globals' as *;
+
+// // loading progress bar theme
+@use './pace.theme' as *; 
+
+@use './layout' as *; 
+
+@use './overrides' as *; 
+
+@include nb-install() {
+    // framework global styles
+    @include nb-theme-global();
+    @include nb-auth-global();
+  
+    @include ngx-layout();  // bu hata veriyor, değiştirildi
+    // loading progress bar 
+    @include ngx-pace-theme();
+  
+    @include nb-overrides();
+};
+/* You can add global styles to this file, and also import other style files */
+ 

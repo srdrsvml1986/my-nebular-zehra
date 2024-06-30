@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAC;EACV,aAAa,EAAE,IAAI;CACpB;;AAED,AAAA,YAAY,EAAC,AAAA,SAAC,AAAA,EAAW;EACvB,IAAI,EAAE,CAAC;CACR;;AAED,AAAA,YAAY,GAAG,CAAC,CAAC;EACf,MAAM,EAAE,iBAAiB;CAC1B;;AAED,AAAA,OAAO,AAAA,iBAAiB,CAAC,YAAY,CAAC;EACpC,cAAc,EAAE,CAAC;CAClB",
+    "sources": [
+        "../src/app/pages/forms/form-layouts/form-layouts.component.scss"
+    ],
+    "names": [],
+    "file": "form-layouts.component.css"
+}

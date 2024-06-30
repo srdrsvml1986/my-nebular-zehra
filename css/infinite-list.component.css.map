@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEI,eAFW,CACb,OAAO,AACJ,WAAW,CAAC;EACX,MAAM,EAAE,IAAI;CACb",
+    "sources": [
+        "../src/app/pages/layout/infinite-list/infinite-list.component.scss"
+    ],
+    "names": [],
+    "file": "infinite-list.component.css"
+}

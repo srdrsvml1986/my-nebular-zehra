@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../src/app/pages/projects/borsa/borsa.component.scss"
+    ],
+    "names": [],
+    "file": "borsa.component.css"
+}
